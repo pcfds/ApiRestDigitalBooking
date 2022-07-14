@@ -1,0 +1,225 @@
+.title-fav-trip {
+  margin: 20px;
+  border-bottom: 1px solid #9fa0a1;
+  padding: 10px;
+  font-size: 32px;
+  color: #263238;
+}
+.reserve-img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.icon-reserve {
+  font-size: 200px;
+}
+.box-img-reserve {
+  width: 95%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-fav-trip {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+.no-booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.no-booking h1 {
+  font-size: 32px;
+  margin-bottom: 5px;
+  color: #222222;
+}
+.no-booking-container {
+  height: 100vh;
+}
+.no-booking p {
+  font-size: 16px;
+  color: #8f96a3;
+}
+.image-gallery-slide-wrapper.bottom {
+  z-index: 1 !important;
+}
+.no-booking button {
+  background-color: transparent;
+  border: 1px solid #8f96a3;
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  gap: 10px;
+  color: #263238;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.box-img-reserve-fav {
+  display: flex;
+}
+.booking-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.header-card-title {
+  position: relative;
+}
+.header-card-title h1 {
+  font-size: 20px;
+}
+.booking-card .floating-rating {
+  display: flex;
+  align-items: center;
+}
+.booking-card-data {
+  width: 95%;
+  border-top: none !important;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #ccc;
+}
+.header-card-title p {
+  padding-bottom: 5px;
+}
+.days-booking h3 {
+  color: #8f96a3;
+  font-size: 13px;
+}
+.days-booking .days-start {
+  margin: 10px 0;
+}
+.days-booking {
+  margin: 10px 0;
+}
+.booking-info p {
+  font-size: 16px;
+}
+.time {
+  color: #aaa;
+  color: #8f96a3;
+  font-size: 14px;
+}
+.button-reserve-delete {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+  height: 50px;
+}
+
+.btn-cancel-reserve {
+  width: fit-content;
+  padding: 0 20px;
+  border-radius: 15px;
+  border: 1px solid red;
+  background-color: #ffe1e1;
+  color: red;
+  cursor: pointer;
+}
+.btn-cancel-reserve i {
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .booking-card {
+    flex-direction: row;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  .container-fav-trip {
+    height: 100%;
+  }
+  .reserve-img {
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .header-card-title h1 {
+    font-size: 22px;
+  }
+  .booking-card:last-child {
+    border: none;
+  }
+  .booking-card-data {
+    border: none;
+    box-shadow: none;
+    margin: 20px;
+  }
+  .days-booking {
+    display: flex;
+    height: 100px;
+    align-items: center;
+  }
+
+  .days-booking .days-start {
+    margin: 0;
+  }
+  .booking-info p {
+    font-size: 13px;
+    width: 80%;
+  }
+  .time {
+    font-size: 13px;
+  }
+  .btn-cancel-reserve {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .booking-card-data {
+    width: 50%;
+  }
+  .booking-card {
+    justify-content: center;
+    width: 100%;
+  }
+  .header-card-title h1 {
+    font-size: 27px;
+  }
+  .header-card-title p {
+    font-size: 17px;
+  }
+  .days-booking {
+    height: 150px;
+  }
+  .days-booking h3 {
+    font-size: 17px;
+  }
+  .box-img-reserve {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .booking-info p {
+    font-size: 25px;
+  }
+  .time {
+    font-size: 17px;
+  }
+  .button-reserve-delete {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .box-img-reserve {
+    width: 35%;
+  }
+  .star {
+    font-size: 23px;
+  }
+}

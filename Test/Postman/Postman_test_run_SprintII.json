@@ -1,0 +1,172 @@
+{
+	"id": "6f175c01-a999-449a-b003-223f1ff34286",
+	"name": "Digital Booking-Sprint II",
+	"timestamp": "2022-06-09T08:24:11.452Z",
+	"collection_id": "20516389-849c5581-844d-4c81-9efc-45897a9fceaa",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 6,
+	"totalFail": 3,
+	"results": [
+		{
+			"id": "c73f493f-8489-4d34-9caf-b28bba25cba4",
+			"name": "findProduct",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/products/find/48",
+			"time": 511,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verificar que la respuesta sea 200": true,
+				"Validar el id": true,
+				"Response time is less than 200ms": false,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Verificar que la respuesta sea 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validar el id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				511
+			],
+			"allTests": [
+				{
+					"Verificar que la respuesta sea 200": true,
+					"Validar el id": true,
+					"Response time is less than 200ms": false,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "95a1b966-7c57-452d-8732-62fb769385fa",
+			"name": "CreateCity",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/cities/create",
+			"time": 230,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verificar que la respuesta sea 200": true,
+				"Response time is less than 200ms": false
+			},
+			"testPassFailCounts": {
+				"Verificar que la respuesta sea 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				230
+			],
+			"allTests": [
+				{
+					"Verificar que la respuesta sea 200": true,
+					"Response time is less than 200ms": false
+				}
+			]
+		},
+		{
+			"id": "ee001ea4-3cd0-4944-9fb5-b643eaec06ca",
+			"name": "deleteCity",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/cities/delete/19",
+			"time": 234,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				234
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "699037bb-8f3a-4ae3-854e-f37ad91929dd",
+			"name": "updateImage",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/image/update",
+			"time": 231,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				231
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1206,
+	"collection": {
+		"requests": [
+			{
+				"id": "c73f493f-8489-4d34-9caf-b28bba25cba4",
+				"method": "GET"
+			},
+			{
+				"id": "95a1b966-7c57-452d-8732-62fb769385fa",
+				"method": "POST"
+			},
+			{
+				"id": "ee001ea4-3cd0-4944-9fb5-b643eaec06ca",
+				"method": "DELETE"
+			},
+			{
+				"id": "699037bb-8f3a-4ae3-854e-f37ad91929dd",
+				"method": "PUT"
+			}
+		]
+	}
+}

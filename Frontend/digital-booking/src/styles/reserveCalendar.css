@@ -1,0 +1,234 @@
+.responsive-calendar {
+  /* by setting font-size, all the elements will correspond */
+  font-size: 9px !important; /* default to 10px */
+  z-index: 1;
+}
+
+.container-data {
+  background-color: white !important;
+}
+.title {
+  border-bottom: 1px solid var(--main-yellow);
+  margin: 20px;
+}
+.title h1 {
+  color: #263238;
+  font-size: 20px !important;
+  font-weight: bold;
+}
+.room-ready-disabled {
+  visibility: hidden;
+}
+.calendarContainer {
+  display: flex !important;
+  flex-direction: column !important;
+  margin-top: 10px;
+}
+.disabled-date {
+  color: red;
+  cursor: not-allowed;
+}
+/* Calendar */
+.rmdp-wrapper.rmdp-shadow.custom-calendar {
+  z-index: 1 !important;
+}
+.custom-calendar {
+  width: 90% !important;
+  justify-content: center;
+  margin: auto;
+}
+.rmdp-day {
+  height: 45px !important;
+  border: 1px solid transparent;
+}
+.rmdp-week {
+  margin: 5px 0 !important;
+}
+.rmdp-day.rmdp-range {
+  background-color: #fff7e7 !important;
+  box-shadow: none !important;
+}
+.rmdp-day.rmdp-range.start,
+.rmdp-day.rmdp-range.end {
+  background-color: #fbc02d !important;
+  border-radius: 5px;
+  box-shadow: none !important;
+}
+.rmdp-day.rmdp-range.start span,
+.rmdp-day.rmdp-range.end span {
+  color: white !important;
+}
+.rmdp-day.rmdp-day-hidden span:hover {
+  border: none !important;
+}
+.rmdp-day.rmdp-disabled:hover {
+  height: 45px !important;
+  border: 1px solid transparent !important;
+}
+.rmdp-day.rmdp-disabled span:hover {
+  color: rgb(204, 204, 204) !important;
+}
+.rmdp-top-class {
+  width: 100%;
+}
+.custom-calendar .rmdp-day-picker div {
+  margin-right: 0 !important;
+  width: 100%;
+}
+.rmdp-calendar {
+  width: 100%;
+  padding: 0 10px;
+}
+.rmdp-header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.rmdp-header div {
+  justify-content: center;
+  width: 100%;
+}
+.rmdp-header div:nth-child(2n) {
+  width: fit-content !important;
+  border-right: 1px solid #e0e0e0;
+  margin: 0;
+  padding-right: 5px;
+}
+.rmdp-header div:nth-child(3n) {
+  width: fit-content !important;
+  margin: 0;
+  padding-right: 5px;
+}
+.rmdp-arrow-container {
+  height: max-content !important;
+  width: max-content !important;
+}
+.rmdp-header-values span {
+  font-size: 14px !important;
+}
+.rmdp-arrow {
+  height: 15px !important;
+  width: 15px !important;
+}
+/* Iniciar Reserva*/
+.reservation-container {
+  margin: 20px;
+}
+.reservation-container h2 {
+  color: #263238;
+}
+.btn-box {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.image-gallery-slide-wrapper.bottom {
+  height: 200px;
+}
+.image-gallery-slides {
+  height: 200px;
+}
+.btn-reservation {
+  background-color: #fbc02d;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  padding: 8px;
+}
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+  .rmdp-day-picker {
+    justify-content: center;
+    padding: 25px;
+  }
+  .rmdp-header div {
+    justify-content: space-around;
+  }
+
+  .custom-calendar .rmdp-day-picker > div:first-child {
+    width: 45%;
+    padding: 0 15px !important;
+  }
+  .custom-calendar .rmdp-day-picker > div:nth-child(2n) {
+    width: 45%;
+    padding: 0 15px !important;
+  }
+  .image-gallery-slide-wrapper.bottom {
+    height: 400px;
+  }
+  .image-gallery-slides {
+    height: 400px;
+  }
+  .reservation-container {
+    display: flex;
+    align-items: center;
+  }
+  .reservation-container h2 {
+    font-size: 20px;
+    width: 60%;
+  }
+  .btn-box {
+    width: 40%;
+  }
+  .rmdp-header-values {
+    margin: 0 30px !important;
+  }
+  .btn-reservation {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .calendar-box {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .calendarContainer {
+    display: flex;
+    width: 70%;
+    position: relative;
+  }
+  .reservation-container {
+    display: flex;
+    height: fit-content !important;
+    width: 30%;
+    border-radius: 5px;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 5px #8798ad;
+  }
+  .rmdp-header div {
+    justify-content: space-around;
+  }
+  .image-gallery-slide-wrapper.bottom {
+    height: 400px;
+  }
+  .image-gallery-slides {
+    height: 400px;
+  }
+  .rmdp-day-picker {
+    justify-content: center;
+    padding: 10px 20px !important;
+  }
+  .rmdp-header-values {
+    width: 100% !important;
+  }
+  .reservation-container h2 {
+    font-size: 15px;
+    width: 100%;
+  }
+  .rmdp-header {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .btn-box {
+    width: 100%;
+  }
+  .rmdp-day.rmdp-disabled:hover {
+    border: none;
+  }
+}

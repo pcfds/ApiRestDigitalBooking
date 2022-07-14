@@ -1,0 +1,108 @@
+{
+	"id": "95faca8e-1947-4ed9-af06-a1c92046bd79",
+	"name": "Sprint III",
+	"timestamp": "2022-06-23T05:02:22.874Z",
+	"collection_id": "20516389-5d3a7a69-ac42-4504-ae51-77fe4c21dcad",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 2,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "d5852636-87cf-4710-ba75-5bb7ed0e5b58",
+			"name": "New User_test2",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/authenticate/newUser",
+			"time": 509,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Verificar que no se pueda crear más de un usuario con el mismo username": true
+			},
+			"testPassFailCounts": {
+				"Verificar que no se pueda crear más de un usuario con el mismo username": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				509
+			],
+			"allTests": [
+				{
+					"Verificar que no se pueda crear más de un usuario con el mismo username": true
+				}
+			]
+		},
+		{
+			"id": "e21f10fe-38dc-4c9b-bae9-e6474d658341",
+			"name": "New User_test1",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/authenticate/newUser",
+			"time": 2088,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2088
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "41c47cb1-3206-4c66-a25a-f0bd3f5f1e29",
+			"name": "new Admin_test2",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/authenticate/login",
+			"time": 345,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				345
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2942,
+	"collection": {
+		"requests": [
+			{
+				"id": "d5852636-87cf-4710-ba75-5bb7ed0e5b58",
+				"method": "POST"
+			},
+			{
+				"id": "e21f10fe-38dc-4c9b-bae9-e6474d658341",
+				"method": "POST"
+			},
+			{
+				"id": "41c47cb1-3206-4c66-a25a-f0bd3f5f1e29",
+				"method": "POST"
+			}
+		]
+	}
+}

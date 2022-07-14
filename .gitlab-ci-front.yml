@@ -1,0 +1,26 @@
+
+stages:
+  - build
+  - deploy
+
+build_job:
+  stage: build
+  image: node:latest
+  script:
+    - cd Frontend/digital-booking
+    #- export PATH=$PATH:frontend/usr/bin/npm 
+    - npm install
+    - CI=false npm run build
+  artifacts:
+    paths:
+      - Frontend/digital-booking/build
+
+deploy_job:
+  stage: deploy
+  image: python:latest
+  script: 
+    - pip install awscli
+    - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+    - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+    - aws configure set region $AWS_DEFAULT_REGION
+    - aws s3 sync Frontend/digital-booking/build s3://$AWS_S3_FRONT --acl public-read

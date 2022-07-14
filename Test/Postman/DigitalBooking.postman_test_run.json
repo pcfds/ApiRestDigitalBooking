@@ -1,0 +1,173 @@
+{
+	"id": "16be1472-102b-4ba5-955a-a51c78449e74",
+	"name": "DigitalBooking",
+	"timestamp": "2022-05-24T14:27:02.554Z",
+	"collection_id": "18028800-d79b3089-d159-46ac-be4d-334a1754a750",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 5,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "92452eeb-0531-4000-ba11-15689d2c7150",
+			"name": "CreateCategory",
+			"url": "http://localhost:8080/categories/create",
+			"time": 21,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				21
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "badfa386-00c7-43b0-93f6-97bee4c56b18",
+			"name": "FindCategory",
+			"url": "http://localhost:8080/categories/find/4",
+			"time": 17,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				17
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "9dd3c25c-7cb5-487b-b3f1-a0bbc46cb9e1",
+			"name": "DeleteCategory",
+			"url": "http://localhost:8080/categories/delete/7",
+			"time": 22,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				22
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "1dc20878-17de-4ef9-ad72-df47537dee95",
+			"name": "UpdateCategory",
+			"url": "http://localhost:8080/categories/update",
+			"time": 21,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				21
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "00e76716-a5fc-41a9-98bb-6e8bde104863",
+			"name": "FindaAllCategories",
+			"url": "http://localhost:8080/categories/findAll",
+			"time": 21,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				21
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 102,
+	"collection": {
+		"requests": [
+			{
+				"id": "92452eeb-0531-4000-ba11-15689d2c7150",
+				"method": "POST"
+			},
+			{
+				"id": "badfa386-00c7-43b0-93f6-97bee4c56b18",
+				"method": "GET"
+			},
+			{
+				"id": "9dd3c25c-7cb5-487b-b3f1-a0bbc46cb9e1",
+				"method": "DELETE"
+			},
+			{
+				"id": "1dc20878-17de-4ef9-ad72-df47537dee95",
+				"method": "PUT"
+			},
+			{
+				"id": "00e76716-a5fc-41a9-98bb-6e8bde104863",
+				"method": "GET"
+			}
+		]
+	}
+}

@@ -1,0 +1,420 @@
+.block-content {
+  background-color: #607d8b;
+  position: relative;
+  padding: 15px 0;
+}
+.block-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  padding-top: 28px;
+  margin: 0 10px;
+}
+.disabled-apply-btn {
+  background-color: #cccccc !important;
+  cursor: not-allowed !important;
+}
+.rmdp-day.rmdp-today span {
+  background-color: transparent !important;
+  color: #607d8b !important;
+}
+.hidden-error {
+  display: none;
+}
+.error-container {
+  background-color: #a30000;
+  border-radius: 10px;
+  margin: auto;
+  padding: 5px 10px;
+  bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  position: absolute;
+  width: fit-content;
+}
+.error-container p {
+  font-size: 13px;
+  color: white;
+}
+.error-container p i {
+  color: white;
+  font-size: 16px;
+}
+/* Search Block Errors */
+
+/*  Inputs */
+.inputs {
+  margin: 20px;
+}
+.icon-select-option {
+  color: #607d8b;
+  font-size: 25px;
+}
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  color: #6f7683;
+  font-size: 20px;
+  transform: translateY(-50%);
+}
+.react-select__option.css-yt9ioa-option,
+.react-select__option.react-select__option--is-focused.css-1n7v3ny-option,
+.react-select__option.react-select__option--is-focused.react-select__option--is-selected.css-9gakcf-option,
+.react-select__option.react-select__option--is-selected.css-9gakcf-option {
+  padding: 10px 0px !important;
+}
+.option-container {
+  padding: 0 !important;
+  padding-right: 10px !important;
+}
+.option-container i {
+  font-size: 20px;
+}
+.react-select__menu.css-26l3qy-menu span.coma {
+  display: none;
+}
+.rmdp-day:not(.rmdp-day-hidden) span:hover,
+.rmdp-day.rmdp-day-hidden:hover {
+  background-color: transparent !important;
+  color: #607d8b !important;
+  border: none !important;
+}
+.rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden) span:hover {
+  background-color: transparent !important;
+  border: none !important;
+}
+/*  Date Picker */
+.date-picker-box {
+  position: relative;
+  margin: 14px 10px;
+}
+.custom-input::placeholder,
+#react-select-3-placeholder {
+  color: #7f7f7f !important;
+}
+.custom-input:focus-visible {
+  outline: none !important;
+}
+.react-select__single-value.css-qc6sy-singleValue,
+.custom-input {
+  color: #607d8b !important;
+}
+.custom-input {
+  width: 100%;
+  height: 38px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: white;
+  appearance: none;
+  padding-left: 40px;
+}
+.custom-calendar-picker.rmdp-wrapper,
+.rmdp-container .custom-calendar-picker.ep-arrow::after {
+  background-color: white;
+}
+.rmdp-container.custom-container div {
+  z-index: 2 !important;
+}
+
+.custom-container {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  width: 100%;
+}
+.rmdp-container div:nth-child(1n) {
+  margin: 0;
+  width: 100%;
+}
+.rmdp-week .rmdp-week-day {
+  color: #263238 !important;
+  height: 25px;
+}
+
+.rmdp-day {
+  color: #607d8b !important;
+}
+.rmdp-day-picker {
+  flex-direction: column !important;
+}
+
+/* Search Button */
+.search-btn {
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #fbc02d;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btn-box-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+}
+.apply-btn {
+  cursor: pointer;
+  height: 40px;
+  border: none;
+  width: 95%;
+  margin-bottom: 15px;
+  background-color: #fbc02d;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+/* Dropdown */
+.search-box {
+  margin: 14px 10px;
+  position: relative;
+}
+.react-select__control {
+  height: 38px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #7f7f7f;
+  background-color: white;
+  appearance: none;
+  padding-left: 28px;
+  border: none !important;
+}
+.react-select__control--is-focused {
+  box-shadow: none !important;
+  border: none !important;
+}
+.react-select__indicators svg,
+.react-select__indicators span {
+  display: none;
+}
+.css-qc6sy-singleValue {
+  color: #607d8b !important;
+}
+.react-select__menu {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+.react-select__option {
+  border-bottom: 1px solid black;
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 auto !important;
+  white-space: pre-wrap;
+  box-shadow: none !important;
+  width: 95% !important;
+  background-color: white !important;
+  color: black !important;
+}
+.react-select__option img {
+  padding-right: 10px;
+}
+.react-select__option:last-child {
+  border-bottom: none;
+}
+.react-select__option:first-child {
+  padding-top: 30px;
+}
+.react-select__option div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.provinceAndCountry,
+.react-select__single-value.css-qc6sy-singleValue {
+  color: #607d8b;
+  display: inline;
+}
+
+.container {
+  margin: 14px 10px;
+  position: relative;
+}
+.react-daterange-picker {
+  height: 38px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #7f7f7f;
+  background-color: white;
+  appearance: none;
+  padding-left: 28px;
+}
+.react-daterange-picker__wrapper {
+  appearance: none;
+}
+.apply-btn-box {
+  padding: 10px;
+}
+.apply-btn-box p {
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+  border-top: 1px solid #e0e0e0;
+  color: #263238;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  .block-title {
+    font-size: 30px;
+  }
+  .error-container {
+    bottom: 15px;
+  }
+  .inputs {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* padding-bottom: 15px; */
+  }
+  .rmdp-header {
+    border-bottom: 1px solid #e0e0e0;
+    height: 55px !important;
+  }
+
+  .rmdp-day-picker {
+    padding: 0px !important;
+  }
+  .rmdp-header div div:nth-child(2n) {
+    border-right: none;
+    padding-right: 0;
+  }
+  .search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 130px;
+  }
+  .react-select__control {
+    height: 40px;
+    width: 265px;
+    box-shadow: none !important;
+  }
+  .rmdp-week {
+    height: 45px;
+  }
+  .custom-input {
+    height: 40px;
+    width: 265px;
+  }
+  .rmdp-day-picker {
+    flex-direction: row !important;
+  }
+  .rmdp-calendar,
+  .custom-calendar-picker.rmdp-wrapper,
+  .rmdp-container .custom-calendar-picker.ep-arrow::after {
+    width: 210% !important;
+    float: right;
+  }
+
+  .apply-btn {
+    width: 90% !important;
+  }
+  .apply-btn-box {
+    padding: 10px 30px;
+  }
+  .apply-btn-box p {
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+    color: #263238;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .block-title {
+    font-size: 36px;
+  }
+  .inputs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+  }
+  .rmdp-header div div:nth-child(2n) {
+    border-right: none;
+    padding-right: 0;
+  }
+  .search-btn {
+    height: 40px;
+    width: 180px;
+  }
+
+  .react-select__control {
+    height: 40px;
+    width: 380px;
+  }
+  .custom-input {
+    display: flex;
+    height: 40px;
+    width: 380px;
+  }
+  .react-select__input-container {
+    display: inline-block;
+  }
+  .rmdp-calendar,
+  .custom-calendar-picker.rmdp-wrapper {
+    width: 160% !important;
+    padding: 10px 20px !important;
+  }
+  .rmdp-day-picker {
+    flex-direction: row !important;
+    gap: 10px !important;
+  }
+
+  .rmdp-day:hover {
+    border: 1px solid #fbc02d;
+    border-radius: 5px !important;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .search-btn {
+    height: 40px;
+    width: 220px;
+  }
+  .react-select__control {
+    height: 40px;
+    width: 470px;
+  }
+  .custom-input {
+    display: flex;
+    height: 40px;
+    width: 470px;
+  }
+  .apply-btn-box {
+    padding: 20px;
+  }
+  .apply-btn-box p {
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+    color: #263238;
+    font-size: 18px;
+  }
+  .rmdp-header {
+    height: 55px !important;
+  }
+
+  .rmdp-day:hover {
+    border: 1px solid #fbc02d;
+    border-radius: 5px !important;
+  }
+}

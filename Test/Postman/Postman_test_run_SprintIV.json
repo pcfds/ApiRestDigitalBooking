@@ -1,0 +1,647 @@
+{
+	"id": "9bf49630-0711-400f-aeac-fd331aa9480e",
+	"name": "Sprint IV",
+	"timestamp": "2022-07-07T03:18:48.010Z",
+	"collection_id": "20516389-5d3a7a69-ac42-4504-ae51-77fe4c21dcad",
+	"folder_id": 0,
+	"environment_id": "20516389-c901a1d3-2f8f-4da3-9b86-be27928fb7bf",
+	"totalPass": 34,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "afdf10d5-dcb9-482f-b96f-c19814ef2885",
+			"name": "createProduct",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/products/create",
+			"time": 485,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful POST request": true,
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				485
+			],
+			"allTests": [
+				{
+					"Successful POST request": true,
+					"Status code name has string": true
+				}
+			]
+		},
+		{
+			"id": "644097a6-4ec7-4e58-a4f6-7541e118068f",
+			"name": "findProduct",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/products/find/51",
+			"time": 221,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verificar que la respuesta sea 200": true,
+				"Validar el id": true,
+				"Body matches string": true,
+				"The response has all properties": true
+			},
+			"testPassFailCounts": {
+				"Verificar que la respuesta sea 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validar el id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The response has all properties": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				221
+			],
+			"allTests": [
+				{
+					"Verificar que la respuesta sea 200": true,
+					"Validar el id": true,
+					"Body matches string": true,
+					"The response has all properties": true
+				}
+			]
+		},
+		{
+			"id": "1896dba1-e1db-4894-bdc5-3c097bee4ee5",
+			"name": "findAllProducts",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/products/findAll",
+			"time": 678,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verificar que la respuesta sea 200": true,
+				"Response time is less than 1000ms": true
+			},
+			"testPassFailCounts": {
+				"Verificar que la respuesta sea 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				678
+			],
+			"allTests": [
+				{
+					"Verificar que la respuesta sea 200": true,
+					"Response time is less than 1000ms": true
+				}
+			]
+		},
+		{
+			"id": "4f75b804-db0f-49b3-b436-4e7640100ea5",
+			"name": "deleteProduct",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/products/delete/140",
+			"time": 232,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful DELETE request": true,
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Successful DELETE request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				232
+			],
+			"allTests": [
+				{
+					"Successful DELETE request": true,
+					"Status code name has string": true
+				}
+			]
+		},
+		{
+			"id": "7914d66c-740d-4e55-96fe-c702e1cc0414",
+			"name": "findProductByCity",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/products/findByCity/Mendoza/Mendoza/Argentina",
+			"time": 251,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body matches string": true,
+				"Test data type of the response": true
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test data type of the response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				251
+			],
+			"allTests": [
+				{
+					"Body matches string": true,
+					"Test data type of the response": true
+				}
+			]
+		},
+		{
+			"id": "605fec92-043e-4c30-9e0e-2b096a499e36",
+			"name": "findByCategory",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/products/findByCategory/Hoteles",
+			"time": 251,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verificar que la respuesta sea 200": true,
+				"Test data type of the response": true
+			},
+			"testPassFailCounts": {
+				"Verificar que la respuesta sea 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test data type of the response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				251
+			],
+			"allTests": [
+				{
+					"Verificar que la respuesta sea 200": true,
+					"Test data type of the response": true
+				}
+			]
+		},
+		{
+			"id": "1bcee2c2-56d5-4b56-8a81-d89eda12a46c",
+			"name": "findProductByNameIdentifier",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/products/findProductByName/hostel-point-rosario",
+			"time": 221,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verificar que la respuesta sea 200": true,
+				"Test data type of the response": true
+			},
+			"testPassFailCounts": {
+				"Verificar que la respuesta sea 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test data type of the response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				221
+			],
+			"allTests": [
+				{
+					"Verificar que la respuesta sea 200": true,
+					"Test data type of the response": true
+				}
+			]
+		},
+		{
+			"id": "563c5489-1f8d-41af-bab3-f4b905630cd7",
+			"name": "findByCityAndDate",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/products/findByCityAndDate/San%20Salvador%20de%20Jujuy/2022-08-26/2022-08-30",
+			"time": 219,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verificar que la respuesta sea 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Verificar que la respuesta sea 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				219
+			],
+			"allTests": [
+				{
+					"Verificar que la respuesta sea 200": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "ab1043cf-e15d-47ae-81f4-fd9917130658",
+			"name": "findByDate",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/products/findByDate/2022-08-3/2022-08-5",
+			"time": 274,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verificar que la respuesta sea 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Verificar que la respuesta sea 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				274
+			],
+			"allTests": [
+				{
+					"Verificar que la respuesta sea 200": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "6a11f416-c4c5-49ca-b619-c0d8ff3001f3",
+			"name": "createBooking",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/booking/create",
+			"time": 1848,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code name has string": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1848
+			],
+			"allTests": [
+				{
+					"Status code name has string": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c17d4bbd-1c4d-468e-ad5a-8a4e3d308ba9",
+			"name": "deleteBooking",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/booking/delete/313",
+			"time": 236,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				236
+			],
+			"allTests": [
+				{
+					"Status code name has string": true
+				}
+			]
+		},
+		{
+			"id": "874cf3b1-89a4-4956-b5ff-76e629566ae4",
+			"name": "findAllBooking",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/booking/findAll",
+			"time": 466,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verificar que la respuesta sea 200": true,
+				"Response time is less than 1000ms": true,
+				"Test data type of the response": true
+			},
+			"testPassFailCounts": {
+				"Verificar que la respuesta sea 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test data type of the response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				466
+			],
+			"allTests": [
+				{
+					"Verificar que la respuesta sea 200": true,
+					"Response time is less than 1000ms": true,
+					"Test data type of the response": true
+				}
+			]
+		},
+		{
+			"id": "ea8e075b-bda7-4e42-8926-abb7ef8905c3",
+			"name": "findBooking",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/booking/find/293",
+			"time": 238,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verificar que la respuesta sea 200": true,
+				"Test data type of the response": true
+			},
+			"testPassFailCounts": {
+				"Verificar que la respuesta sea 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test data type of the response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				238
+			],
+			"allTests": [
+				{
+					"Verificar que la respuesta sea 200": true,
+					"Test data type of the response": true
+				}
+			]
+		},
+		{
+			"id": "78eaeeb3-008c-4cd5-8e6e-1a92f40b3146",
+			"name": "isAdmin",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/users/isAdmin/valeriabalchav@gmail.com",
+			"time": 221,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verificar que la respuesta sea 200": true
+			},
+			"testPassFailCounts": {
+				"Verificar que la respuesta sea 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				221
+			],
+			"allTests": [
+				{
+					"Verificar que la respuesta sea 200": true
+				}
+			]
+		},
+		{
+			"id": "77e74efd-6f99-46fe-aad3-c9ae2082bd58",
+			"name": "getLikedProducts",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/users/favorites/valebc9.21@gmail.com",
+			"time": 228,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verificar que la respuesta sea 200": true,
+				"Test data type of the response": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Verificar que la respuesta sea 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test data type of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				228
+			],
+			"allTests": [
+				{
+					"Verificar que la respuesta sea 200": true,
+					"Test data type of the response": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "5438243b-e5f2-4f27-90de-36ee262bddba",
+			"name": "addLikedProduct",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/users/favorites/valebc9.21@gmail.com/hostel-messi",
+			"time": 237,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verificar que la respuesta sea 200": true
+			},
+			"testPassFailCounts": {
+				"Verificar que la respuesta sea 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				237
+			],
+			"allTests": [
+				{
+					"Verificar que la respuesta sea 200": true
+				}
+			]
+		},
+		{
+			"id": "d0bab4ce-0f25-4ed8-b6b2-b7e2f744ecdd",
+			"name": "deletedLikedProduct Copy",
+			"url": "http://g9apidigitalbookinganita-env.eba-acy747p9.us-west-2.elasticbeanstalk.com/users/favorites/valebc9.21@gmail.com/hostel-messi",
+			"time": 250,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verificar que la respuesta sea 200": true
+			},
+			"testPassFailCounts": {
+				"Verificar que la respuesta sea 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				250
+			],
+			"allTests": [
+				{
+					"Verificar que la respuesta sea 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 6556,
+	"collection": {
+		"requests": [
+			{
+				"id": "afdf10d5-dcb9-482f-b96f-c19814ef2885",
+				"method": "POST"
+			},
+			{
+				"id": "644097a6-4ec7-4e58-a4f6-7541e118068f",
+				"method": "GET"
+			},
+			{
+				"id": "1896dba1-e1db-4894-bdc5-3c097bee4ee5",
+				"method": "GET"
+			},
+			{
+				"id": "4f75b804-db0f-49b3-b436-4e7640100ea5",
+				"method": "DELETE"
+			},
+			{
+				"id": "7914d66c-740d-4e55-96fe-c702e1cc0414",
+				"method": "GET"
+			},
+			{
+				"id": "605fec92-043e-4c30-9e0e-2b096a499e36",
+				"method": "GET"
+			},
+			{
+				"id": "1bcee2c2-56d5-4b56-8a81-d89eda12a46c",
+				"method": "GET"
+			},
+			{
+				"id": "563c5489-1f8d-41af-bab3-f4b905630cd7",
+				"method": "GET"
+			},
+			{
+				"id": "ab1043cf-e15d-47ae-81f4-fd9917130658",
+				"method": "GET"
+			},
+			{
+				"id": "6a11f416-c4c5-49ca-b619-c0d8ff3001f3",
+				"method": "POST"
+			},
+			{
+				"id": "c17d4bbd-1c4d-468e-ad5a-8a4e3d308ba9",
+				"method": "DELETE"
+			},
+			{
+				"id": "874cf3b1-89a4-4956-b5ff-76e629566ae4",
+				"method": "GET"
+			},
+			{
+				"id": "ea8e075b-bda7-4e42-8926-abb7ef8905c3",
+				"method": "GET"
+			},
+			{
+				"id": "78eaeeb3-008c-4cd5-8e6e-1a92f40b3146",
+				"method": "GET"
+			},
+			{
+				"id": "77e74efd-6f99-46fe-aad3-c9ae2082bd58",
+				"method": "GET"
+			},
+			{
+				"id": "5438243b-e5f2-4f27-90de-36ee262bddba",
+				"method": "POST"
+			},
+			{
+				"id": "d0bab4ce-0f25-4ed8-b6b2-b7e2f744ecdd",
+				"method": "DELETE"
+			}
+		]
+	}
+}

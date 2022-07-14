@@ -1,0 +1,121 @@
+.fav-card-image {
+  width: 95%;
+  position: relative;
+  cursor: pointer;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+.icon-whishList {
+  font-size: 200px;
+  margin-bottom: 20px;
+  -webkit-text-stroke: 11px white;
+}
+.title-product-wishlist {
+  width: 70%;
+}
+.whislist-button-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.btn-whishlist {
+  padding: 10px;
+  display: flex;
+  color: #263238;
+  background-color: var(--main-yellow);
+  justify-content: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.fav-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.fav-container-page {
+  position: absolute;
+  height: 30px !important;
+  display: flex;
+  justify-content: center;
+  width: 30px !important;
+  align-items: center;
+  right: 8px;
+  z-index: 2;
+  background-color: white;
+  top: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.descrition-fav-page {
+  padding: 10px 0;
+}
+.header-card-title {
+  border-bottom: 1px solid #8f96a3;
+}
+
+@media screen and (min-width: 768px) {
+  .fav-card-image {
+    width: 40%;
+    border-radius: 0px;
+  }
+  .title-forTablet-desktop {
+    font-size: 20px;
+  }
+  .fav-card {
+    flex-direction: row;
+    height: fit-content;
+    justify-content: center;
+    margin: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+  }
+  .fav-card-image div,
+  .fav-card-image .image-gallery-slide-wrapper.bottom {
+    height: 200px;
+  }
+  .fav-card-image .image-gallery .image-gallery-slides,
+  .fav-card-image .image-gallery-image {
+    border-radius: 15px !important;
+  }
+  .fav-card-image .image-gallery .image-gallery-slides {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .fav-card-image div,
+  .fav-card-image .image-gallery-slides {
+    height: 340px;
+    width: 100%;
+  }
+  .fav-card {
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  .fav-card-image div,
+  .fav-card-image .image-gallery-slide-wrapper.bottom {
+    height: 100%;
+  }
+  .fav-card-image .image-gallery .image-gallery-slides {
+    height: 100%;
+    width: 100%;
+  }
+  .container-fav {
+    width: 100%;
+    justify-content: center !important;
+  }
+  .whislist-button-box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .btn-whishlist {
+    width: 50%;
+  }
+}
